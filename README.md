@@ -9,11 +9,11 @@
   - **API**: GitHub API REST (e.g., `https://api.github.com/search/repositories`), que es gratuita y no requiere autenticación para consultas públicas. Las opciones son diversas: Spotify, Facebook, Instagram, TikTok, Shazam, Youtube, Codewars, etc.
 - **Estructura del Proyecto**:
   - **Componentes**: Incluye un componente principal como `repo-list.component.ts` (similar a [subreddit-column.component.ts](/reddit-client/src/app/components/subreddit-column.component.ts:0:0-0:0)), con subcomponentes para detalles de repositorios. Añade un `search-bar.component.ts` para la entrada de usuario.
-  - **Servicios**: Un `github.service.ts` que encapsula llamadas API, con métodos como `searchRepositories(query: string)` para devolver datos en formato observable.
+  - **Servicios**: Un `github.service.ts` (por ejemplo) que encapsula llamadas API, con métodos como `searchRepositories(query: string)` para devolver datos en formato observable.
   - **Plantillas**: Usa directivas como `@if`, `@for` y eventos para una UI interactiva, con estilos CSS para una apariencia moderna (p. ej., usando clases como `column`, `loading`).
-- **Detalles de la API**: Debes usar el endpoint `GET /search/repositories` con parámetros como `q` para la consulta. Ejemplo de llamada: `this.http.get('https://api.github.com/search/repositories', { params: { q: query } })`. Enfatiza el manejo de errores HTTP (e.g., códigos 403 para límites de tasa) y la transformación de respuestas a un modelo TypeScript como `GitHubRepo`.
+- **Detalles de la API**: Debes usar, por ejemplo, el endpoint `GET /search/repositories` con parámetros como `q` para la consulta. Ejemplo de llamada: `this.http.get('https://api.github.com/search/repositories', { params: { q: query } })`. Enfatiza el manejo de errores HTTP (e.g., códigos 403 para límites de tasa) y la transformación de respuestas.
 - **Características Adicionales**: Para enriquecer el proyecto, sugiero agregar:
-  - Filtrado de repositorios por lenguaje o estrellas. La mayoría de APIs que os proprongo tienen algún sistema similar.
+  - Filtrado de repositorios (por ejemplo por lenguaje o estrellas). La mayoría de APIs que os proprongo tienen algún sistema similar.
   - Un componente para mostrar detalles de la información al hacer clic.
   - Integración con notificaciones usando signals para actualizaciones en tiempo real.
  
