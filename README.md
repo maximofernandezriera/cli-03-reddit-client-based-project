@@ -23,8 +23,8 @@
   - Para la generación de la documentación está permitida el uso (pero no el abuso) de algunas IAs siempre y cuando reviséis lo que entregáis.
   - El código fuente del proyecto en este repo.
   - Algunas imágenes del funcionamiento de vuestro proyecto en local o en github pages (esto último es totalmente voluntario).
-  - 
  
  # Fecha de entrega
 
   - El lunes 3 de noviembre a las 23:59 h.
+  - Tened en cuenta la penalización establecida como es habitual.
